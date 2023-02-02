@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-zinc-800 grid grid-rows-1 justify-items-center items-center">
+	
 		<img class="md:pt-12" src="../assets/image.png" alt="" />
 		<div class="height md:absolute md:grid grid-cols-2 items-center md:gap-96">
 			<div class="text-right"
@@ -10,12 +10,12 @@
 			>
 			<div class="text-left max-w-md "
 				><p class="text-orange-1200">Front-end developer   <img class="inline-block align-bottom  text-center " src="../assets/text- line.png" alt=""></p>
-                <p class="text-3xl lg:text-4xl font-bold  !leading-12"
+                <p class="text-2xl md:text-3xl lg:text-4xl font-bold  !leading-12"
 					>Based in Netherland, I’m Developer and Graphic Designer.</p
 				></div
 			>
 		</div>
-	</div>
+
 </template>
 
 <style scoped>
