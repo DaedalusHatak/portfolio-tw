@@ -7,13 +7,11 @@ components:{HeroSection},
 
 <template>
 
-  <hero-section class="h lg:w-screen"></hero-section>
+  <hero-section class="h md:w-screen"></hero-section>
 
     
 </template>
 
 <style scoped>
-.h{
-width:100dvw;
-}
+
 </style>
