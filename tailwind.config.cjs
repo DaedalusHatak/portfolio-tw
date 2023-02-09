@@ -12,7 +12,9 @@ module.exports = {
       },
       colors: {
         'orange-1200': '#F8624C',
-        'orange-1100': '#F26C4F'
+        'orange-1100': '#F26C4F',
+        'gray-1200': '#9C9C9C',
+        'dark-1200': '#131313'
       },
     },
   },
