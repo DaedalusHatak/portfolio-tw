@@ -1,9 +1,9 @@
 <template>
 	
-		<img class="md:pt-12" src="../assets/image.png" alt="" />
+		<img class="lg:self-end md:pt-12" src="../assets/image.png" alt="" />
 		<div class="height md:absolute md:grid grid-cols-2 items-center md:gap-96">
 			<div class="text-right"
-				><h1 class="text-white font-semibold text-8xl"
+				><h1 class="text-white font-semibold text-5xl md:text-8xl"
 					>Far<span class="text-orange-1100">za</span>na <br />
 					Akter.</h1
 				></div
