@@ -1,5 +1,6 @@
 <template>
 	<div class="py-12 lg:grid justify-center text-center">
+    <div class="text-3xl text-orange-1100 font-bold pb-12 text-with-line">My services</div>
 		<div class="text-5xl font-semibold pb-12 mb-12">What can I do best?</div>
 		<div
 			class="lg:grid text-center justify-self-center  grid-cols-3 gap-12 lg:w-4/6"

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 md:grid grid-cols-2 justify-center text-left gap-44">
+  <div class=" py-12 md:grid grid-cols-2 justify-center text-left gap-44">
     <div>
       <p class="tracking-tight font-medium text-4xl max-w-xl pr-7 leading-12">
         You can’t use up creativity. The more you use, the more you have in your
