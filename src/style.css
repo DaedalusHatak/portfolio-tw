@@ -24,13 +24,37 @@
 body {
   margin: 0;
   place-items: center;
-
+ 
   min-height: 100vh;
 }
+.text-with-line{
+  white-space:pre-line;
 
+}
+.text-with-line::after {
+	--width: 8ch;
+	--line-width: 3px;
+	--line-break: 70%;
+	--gap: 7px;
+	--dot-diameter: 6px;
 
+	content: '';
+	display: inline-block;
+	width: var(--width);
+	height: 1ch;
 
-
+  margin-left: 20px;
+	background: radial-gradient(100% 100%, currentcolor 50%, #fff0 0) right center /
+			var(--dot-diameter) var(--dot-diameter) no-repeat,
+		linear-gradient(
+				90deg,
+				currentcolor var(--line-break), #fff0 0
+					calc(var(--line-break) + var(--gap)),
+				currentcolor 0
+			)
+			left center / calc(100% - var(--dot-diameter) - var(--gap))
+			var(--line-width) no-repeat;
+}
 
 #app {
 
