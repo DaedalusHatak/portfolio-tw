@@ -14,3 +14,10 @@ export default{
 
 };
 </script>
+
+<style scoped>
+div {
+	scroll-snap-align: start;
+	scroll-snap-stop:normal;
+}
+</style>

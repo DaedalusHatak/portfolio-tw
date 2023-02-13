@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full  grid grid-rows-1 justify-items-center items-center"><slot></slot></div>
+    <div class="w-full  grid justify-items-center items-center"><slot></slot></div>
 </template>
 
 <style scoped>
