@@ -2,7 +2,7 @@
 	<div
 		class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-center md:gap-12 gap-32 md:px-12 lg:w-4/6"
 		><div class="text-left lg:col-span-2"
-			><div class=" font-bold text-2xl text-orange-1100 text-with-line"
+			><div class="font-bold text-2xl text-orange-1100 text-with-line"
 				>Expertise</div
 			>
 
@@ -57,8 +57,10 @@
 							style="width: 78%"
 						></div> </div
 				></li>
-			</ul> </div
-	></div>
+			</ul>
+		</div>
+
+	</div>
 </template>
 
 <style scoped>

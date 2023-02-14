@@ -6,14 +6,35 @@ import SectionTemplate from './components/templates/SectionTemplate.vue';
 import MySkills from './components/MySkills.vue';
 export default{
 components:{HeroSection,AboutMe,SectionTemplate,MyServices,MySkills},
+watch:{
+ 
+
+},
+mounted(){
+
+},
+data(){
+    return{
+
+   
+    }
+},
+methods:{
+
+}
 };
+
 </script>
 
 <template>
- <section-template class=" bg-zinc-800"><hero-section></hero-section></section-template>
- <section-template class="bg-dark-1200"> <about-me></about-me></section-template>
- <section-template class="bg-dark-1100"> <my-services></my-services></section-template>
- <section-template class="bg-dark-1200"> <my-skills></my-skills></section-template>
+<div>
+    
+    <section-template class=" bg-zinc-800"><hero-section></hero-section></section-template>
+ <section-template id="section2" class="  bg-dark-1200"> <about-me></about-me></section-template>
+ <section-template class=" bg-dark-1100"> <my-services></my-services></section-template>
+ <section-template class=" bg-dark-1200"> <my-skills></my-skills></section-template>
+
+</div>
 </template>
 
 <style scoped>
