@@ -25,7 +25,7 @@
 		/>
 	</svg>
 
-	<div class="py-36 md:py-12 lg:grid px-5 justify-center relative text-center">
+	<div class="py-36 md:py-12 lg:grid px-3 justify-center relative text-center">
 		<div class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
 			>Contact</div
 		>
@@ -41,13 +41,13 @@
 				</p>
 				<div class="pt-5 font-medium text-lg lg:text-2xl">
 					<p class="flex items-center gap-5 py-5">
-						<img src="../assets/coolicon.svg" alt="" />Mirpur Dhaka-1216</p
+						<img src="../assets/coolicon.svg" alt="" />Poland, Bialystok</p
 					>
 					<p class="flex items-center gap-5 py-5">
-						<img src="../assets/icon.svg" alt="" />info@hexbo.com</p
+						<img src="../assets/icon.svg" alt="" /><a class="hover-link" href="mailto:pawelkic.dev@gmail.com">pawelkic.dev@gmail.com</a></p
 					>
 					<p class="flex items-center gap-5 py-5"
-						><img src="../assets/Vector.svg" alt="" />+903 66 9876</p
+						><img src="../assets/Vector.svg" alt="" /><a class="hover-link" href="tel:+48665123514">+48 665 123 514</a></p
 					>
 					<p class="flex items-center gap-5 py-5"
 						><img src="../assets/Group 4230.svg" alt="" />Freelance available</p
@@ -95,6 +95,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 button {
 	border-radius: 0.75em;
 }

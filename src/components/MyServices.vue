@@ -24,26 +24,20 @@
 			stroke="#DC664A"
 		/>
 	</svg>
-	<div class="py-36 md:py-12 px-5 lg:grid justify-center relative text-center">
+	<div class="py-36 md:py-12 px-3 lg:grid justify-center relative text-center">
 		<div class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
 			>My services</div
 		>
 		<div class="text-3xl md:text-5xl font-semibold pb-12 mb-12">What can I do best?</div>
 		<div class="lg:grid text-center justify-self-center grid-cols-3 gap-12">
-			<card-template title="Webflow Development" imag="1">
-				Really boy law county she unable her sister. Feet you off its like like
-				six. Among sex are leave law built now. In built table in an rapid
-				blush. Merits behind on afraid or warmly.
+			<card-template title="Mobile Development" imag="1">
+				Adjusting websites that as much browsers are supported as possible (including facebook browser), where everything works fine without any issues.
 			</card-template>
-			<card-template class="bg-dark-1200" title="Figma Web Designing" imag="2">
-				Really boy law county she unable her sister. Feet you off its like like
-				six. Among sex are leave law built now. In built table in an rapid
-				blush. Merits behind on afraid or warmly.
+			<card-template class="bg-dark-1200" title="Website Development" imag="2">
+				Customizing websites so they look pretty good (usually using tailwind/vuetify for vue.js apps), and making them fully responsive.
 			</card-template>
-			<card-template title="Shopify Development" imag="3">
-				Really boy law county she unable her sister. Feet you off its like like
-				six. Among sex are leave law built now. In built table in an rapid
-				blush. Merits behind on afraid or warmly.
+			<card-template title="Vue.js" imag="3">
+				Using Vue.js for small applications and developing fully supported websites so anyone can modify it at any point (Usually it comes with Vite)
 			</card-template>
 		</div>
 	</div>

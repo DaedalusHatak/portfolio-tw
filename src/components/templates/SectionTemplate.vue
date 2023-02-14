@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="w-full snapAlign relative px-12 md:px-24 grid grid-rows-1 justify-items-center items-center"
+		class="section  snapAlign relative  grid  justify-items-center items-center"
 		><slot></slot
 	></div>
 </template>
@@ -8,13 +8,17 @@
 <script></script>
 
 <style scoped>
-div {
-	min-height: 100dvh;
-}
+	.section {
+		min-height: 100vh;  
+  
 
+	max-width: 100%;
+}
 @media screen and (min-width: 1024px) {
 	.snapAlign {
 		scroll-snap-align: start;
 	}
+
+
 }
 </style>
