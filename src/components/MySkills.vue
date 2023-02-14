@@ -17,7 +17,7 @@
 		</div>
 		<div class="lg:col-span-3">
 			<ul class="text-left md:pl-12">
-				<li class="grid grid-cols-3 py-3">
+				<li class="grid grid-cols-3 py-3 items-center">
 					<label for="file">Adobe Photoshop:</label>
 					<div
 						class="w-full col-span-2 bg-gray-200 rounded-full h-3.5 dark:bg-gray-700"
@@ -27,7 +27,7 @@
 							style="width: 99%"
 						></div> </div
 				></li>
-				<li class="grid grid-cols-3 py-3"
+				<li class="grid grid-cols-3 py-3  items-center"
 					><label for="file">Adobe Illustrator:</label>
 					<div
 						class="w-full col-span-2 bg-gray-200 rounded-full h-3.5 dark:bg-gray-700"
@@ -37,7 +37,7 @@
 							style="width: 85%"
 						></div> </div
 				></li>
-				<li class="grid grid-cols-3 py-3"
+				<li class="grid grid-cols-3 py-3  items-center"
 					><label for="file">Adobe XD:</label>
 					<div
 						class="w-full col-span-2 bg-gray-200 rounded-full h-3.5 dark:bg-gray-700"
@@ -47,7 +47,7 @@
 							style="width: 85%"
 						></div> </div
 				></li>
-				<li class="grid grid-cols-3 py-3"
+				<li class="grid grid-cols-3 py-3  items-center"
 					><label for="file">Figma:</label>
 					<div
 						class="w-full col-span-2 bg-gray-200 rounded-full h-3.5 dark:bg-gray-700"
@@ -67,5 +67,9 @@
 li {
 	max-width: 650px;
 }
-
+div{
+	scroll-snap-stop: always;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+}
 </style>

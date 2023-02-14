@@ -4,24 +4,9 @@ import AboutMe from './components/AboutMe.vue';
 import MyServices from './components/MyServices.vue';
 import SectionTemplate from './components/templates/SectionTemplate.vue';
 import MySkills from './components/MySkills.vue';
+import MyPortfolio from './components/MyPortfolio.vue';
 export default{
-components:{HeroSection,AboutMe,SectionTemplate,MyServices,MySkills},
-watch:{
- 
-
-},
-mounted(){
-
-},
-data(){
-    return{
-
-   
-    }
-},
-methods:{
-
-}
+components:{HeroSection,AboutMe,SectionTemplate,MyServices,MySkills,MyPortfolio},
 };
 
 </script>
