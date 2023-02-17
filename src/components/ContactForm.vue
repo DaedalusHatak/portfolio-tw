@@ -29,7 +29,9 @@
 		<div class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
 			>Contact</div
 		>
-		<div class="text-3xl md:text-5xl font-semibold pb-12 mb-12">Happy Clients</div>
+		<div class="text-3xl md:text-5xl font-semibold pb-12 mb-12"
+			>Happy Clients</div
+		>
 		<div class="lg:grid text-left justify-self-center grid-cols-2 gap-40">
 			<div>
 				<h3 class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
@@ -39,15 +41,21 @@
 					>"Said heaven dry made Them gathering the very second morning us be
 					divide isn't. Saw Seasons winged replenish
 				</p>
-				<div class="pt-5 font-medium text-lg lg:text-2xl">
+				<div class="pt-5 font-medium text-md md:text-lg lg:text-2xl">
 					<p class="flex items-center gap-5 py-5">
-						<img src="../assets/coolicon.svg" alt="" />Mirpur Dhaka-1216</p
+						<img src="../assets/coolicon.svg" alt="" />Poland, Bialystok</p
 					>
 					<p class="flex items-center gap-5 py-5">
-						<img src="../assets/icon.svg" alt="" />info@hexbo.com</p
+						<img src="../assets/icon.svg" alt="" /><a
+							href="mailto:pawelkic.dev@gmail.com"
+							>pawelkic.dev@gmail.com</a
+						></p
 					>
 					<p class="flex items-center gap-5 py-5"
-						><img src="../assets/Vector.svg" alt="" />+903 66 9876</p
+						><img src="../assets/Vector.svg" alt="" /><a
+							href="tel:+48 665 123 514"
+							>+48 665 123 514</a
+						></p
 					>
 					<p class="flex items-center gap-5 py-5"
 						><img src="../assets/Group 4230.svg" alt="" />Freelance available</p
@@ -55,19 +63,42 @@
 				</div>
 			</div>
 			<div class="">
-				<form @submit.prevent="sendForm" class="flex flex-col mb-12" action="">
-					<p class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
+				<form
+					@submit.prevent="sendForm"
+					class="flex flex-col mb-12 gap-3"
+					action=""
+				>
+					<p
+						class="text-3xl text-orange-1100 font-bold pb-12 text-with-line w-max-full"
 						>Contact Form</p
 					>
-					<input class="pl-8 my-3" placeholder="Full Name :" type="text" />
-					<input class="pl-8 my-3" placeholder="E-mail :" type="text" />
-					<textarea
-						class="pl-8 pt-6 my-3"
-						placeholder="Send message :"
-						maxlength="300"
-						cols="5"
-						rows="5"
-					></textarea>
+					<div class="input pl-2 mb-3"
+						><input class="py-5 pl-3
+						
+						
+						
+						" placeholder="Full Name :" type="text"
+					/></div>
+					<div class="input  pl-2 mb-3"
+						><input class="py-5 pl-3
+						
+						
+						
+						" placeholder="E-mail :" type="text"
+					/></div>
+					<div class="input  pl-2 mb-3">
+						<textarea
+							class="py-5 pl-3
+							
+							
+							
+							"
+							placeholder="Send message :"
+							maxlength="300"
+							cols="3"
+							rows="5"
+						></textarea>
+					</div>
 
 					<button
 						class="grid glow-effect relative w-max p-4 bg-orange-1200"
@@ -115,9 +146,20 @@ img {
 form {
 	max-width: 100%;
 }
+.input {
+	
+	width: 100%;
+	min-height: 73px;
+	box-sizing: border-box;
+}
+
 input,
 textarea {
-	min-height: 73px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	width: 100%;
+	height: 100%;
 	border: 1px solid rgba(255, 255, 255, 0.39);
 	background-color: transparent;
 	resize: none;

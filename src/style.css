@@ -61,8 +61,8 @@ body {
 
 #app {
 
-  width: 100vw;
-  height: 100dvh;
+  
+  height: 100svh;
   margin: 0 auto;
   scroll-behavior: smooth;
   
