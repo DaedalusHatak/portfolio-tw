@@ -20,27 +20,25 @@ export default {
 </script>
 
 <template>
-	<div>
-		<section-template class="bg-zinc-800"
-			><hero-section></hero-section
+
+
+	<section-template class=" bg-dark-1100"><hero-section class="md:self-end"></hero-section
 		></section-template>
 		<section-template class="bg-dark-1200">
 			<about-me></about-me
 		></section-template>
-		<section-template class="bg-dark-1100">
+		<section-template class=" bg-dark-1100">
 			<my-services></my-services
 		></section-template>
-		<section-template class="bg-dark-1200">
+		<section-template class=" bg-dark-1200">
 			<my-skills></my-skills
 		></section-template>
-		<section-template class="bg-dark-1100">
+		<section-template class=" bg-dark-1100">
 			<my-portfolio></my-portfolio
 		></section-template>
-		<section-template class="bg-dark-1200"
+		<section-template class=" bg-dark-1200"
 			><contact-form></contact-form
 		></section-template>
-	</div>
-</template>
 
-<style scoped>
-</style>
+	
+</template>

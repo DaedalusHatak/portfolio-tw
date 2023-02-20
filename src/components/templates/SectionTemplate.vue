@@ -1,6 +1,5 @@
 <template>
-	<div
-		class="w-full svh snapAlign relative px-2 md:px-24 grid grid-rows-1 justify-items-center items-center"
+	<div class="svh snapAlign grid items-center relative px-2 md:px-24"
 		><slot></slot
 	></div>
 </template>
@@ -9,13 +8,9 @@
 
 <style scoped>
 .svh {
-	
 	min-height: 100svh;
-	min-height: -webkit-fill-available;
-	
 }
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 750px) {
 	.snapAlign {
 		scroll-snap-align: start;
 	}

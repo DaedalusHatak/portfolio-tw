@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="px-5 w-full py-12 md:grid grid-cols-2 justify-center text-left gap-44"
+		class="px-5 py-12 md:grid grid-cols-2 justify-center text-left gap-44"
 	>
 		<div>
 			<p class="tracking-tight font-medium text-4xl max-w-xl pr-7 leading-12">

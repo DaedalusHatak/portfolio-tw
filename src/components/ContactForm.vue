@@ -25,16 +25,14 @@
 		/>
 	</svg>
 
-	<div class="py-36 md:py-12 lg:grid px-5 justify-center relative text-center">
-		<div class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
+	<div class="pt-6 lg:grid px-5 justify-center relative text-center">
+		<div class="text-3xl text-orange-1100 font-bold pb-3 text-with-line"
 			>Contact</div
 		>
-		<div class="text-3xl md:text-5xl font-semibold pb-12 mb-12"
-			>Happy Clients</div
-		>
+		<div class="text-3xl md:text-5xl font-semibold pb-6">Happy Clients</div>
 		<div class="lg:grid text-left justify-self-center grid-cols-2 gap-40">
 			<div>
-				<h3 class="text-3xl text-orange-1100 font-bold pb-12 text-with-line"
+				<h3 class="text-3xl text-orange-1100 font-bold pb-6 text-with-line"
 					>Get in touch</h3
 				>
 				<p class="text-gray-1100"
@@ -62,52 +60,28 @@
 					>
 				</div>
 			</div>
-			<div class="">
-				<form
-					@submit.prevent="sendForm"
-					class="flex flex-col mb-12 gap-3"
-					action=""
-				>
+			<div class="pb-16">
+				<form @submit.prevent="sendForm" class="flex flex-col gap-3" action="">
 					<p
 						class="text-3xl text-orange-1100 font-bold pb-12 text-with-line w-max-full"
 						>Contact Form</p
 					>
 					<div class="input pl-2 mb-3"
-						><input class="py-5 pl-3
-						
-						
-						
-						" placeholder="Full Name :" type="text"
+						><input class="py-5 pl-3" placeholder="Full Name :" type="text"
 					/></div>
-					<div class="input  pl-2 mb-3"
-						><input class="py-5 pl-3
-						
-						
-						
-						" placeholder="E-mail :" type="text"
+					<div class="input pl-2 mb-3"
+						><input class="py-5 pl-3" placeholder="E-mail :" type="text"
 					/></div>
-					<div class="input  pl-2 mb-3">
+					<div class="input pl-2 mb-3">
 						<textarea
-							class="py-5 pl-3
-							
-							
-							
-							"
+							class="py-5 pl-3"
 							placeholder="Send message :"
 							maxlength="300"
 							cols="3"
 							rows="5"
 						></textarea>
 					</div>
-
-					<button
-						class="grid glow-effect relative w-max p-4 bg-orange-1200"
-						type="submit"
-						>Send message
-						<svg class="glow-container absolute">
-							<rect pathLength="100" class="glow-blur"></rect>
-							<rect pathLength="100" class="glow-line"></rect>
-						</svg> </button></form
+					<button><ButtonGlow></ButtonGlow></button> </form
 			></div>
 		</div>
 	</div>
@@ -126,9 +100,6 @@ export default {
 </script>
 
 <style scoped>
-button {
-	border-radius: 0.75em;
-}
 .vector {
 	top: 0;
 	left: 0;
@@ -147,7 +118,6 @@ form {
 	max-width: 100%;
 }
 .input {
-	
 	width: 100%;
 	min-height: 73px;
 	box-sizing: border-box;
@@ -163,54 +133,5 @@ textarea {
 	border: 1px solid rgba(255, 255, 255, 0.39);
 	background-color: transparent;
 	resize: none;
-}
-
-.glow-container {
-	pointer-events: none;
-	width: calc(100% + 20px);
-	height: calc(100% + 20px);
-	top: -10px;
-	left: -10px;
-	opacity: 0;
-	/* outline: 3px solid red; */
-}
-.glow-line,
-.glow-blur {
-	width: calc(100% - 20px);
-	height: calc(100% - 20px);
-	x: 10px;
-	y: 10px;
-	rx: 0.75em;
-	fill: transparent;
-	stroke: rgb(255, 255, 255);
-	stroke-width: 5px;
-	stroke-dasharray: 20 30;
-	stroke-linecap: round;
-}
-
-.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
-	stroke-dashoffset: -85px;
-	transition: stroke-dashoffset 1200ms ease-in;
-}
-.glow-line {
-	stroke: #fff;
-	stroke-width: 3px;
-}
-.glow-blur {
-	filter: blur(5px);
-}
-.glow-effect:is(:hover, :focus) .glow-container {
-	animation: glow-visibility ease-in-out 1200ms;
-}
-
-@keyframes glow-visibility {
-	0%,
-	100% {
-		opacity: 0;
-	}
-	25%,
-	75% {
-		opacity: 1;
-	}
 }
 </style>
