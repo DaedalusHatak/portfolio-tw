@@ -4,7 +4,9 @@
 	>
 		<div>
 			<p class="tracking-tight font-medium text-4xl max-w-xl pr-7 leading-12">
-				Make it work, make it right, make it fast.
+				Make it work <br>
+				Make it right <br>
+				Make it fast
 			</p>
 
 			<p class="leading-7 max-w-xl text-gray-1200">
@@ -15,7 +17,7 @@
 			</p>
 			<div class="pt-12 mt-12 flex w-12 items-center">
 				<p class="text-6xl lg:text-8xl text-orange-1300 font-semibold">01</p>
-				<p class="text-2xl lg:text-4xl">Years of experience</p>
+				<p class="text-2xl lg:text-4xl">Year of experience</p>
 			</div>
 		</div>
 		<div class="pt-12 mt-12">
@@ -24,7 +26,10 @@
 			</p>
 			<p class="text-gray-1200 leading-10">Let’s talk with me</p>
 			<p class="text-orange-1300 font-semibold text-xl lg:text-2xl pt-12">
-				pawelkic.dev@gmail.com
+				<a
+							href="mailto:pawelkic.dev@gmail.com"
+							>pawelkic.dev@gmail.com</a
+						>
 			</p>
 		</div>
 	</div>

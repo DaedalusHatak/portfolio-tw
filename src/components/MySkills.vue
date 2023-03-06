@@ -63,9 +63,5 @@
 li {
 	max-width: 650px;
 }
-div {
-	scroll-snap-stop: always;
-	scroll-snap-align: start;
-	scroll-snap-type: y mandatory;
-}
+
 </style>

@@ -7,12 +7,13 @@
 <script></script>
 
 <style scoped>
-.svh {
-	min-height: 100svh;
-}
+
 @media screen and (min-width: 1024px) and (min-height: 750px) {
 	.snapAlign {
 		scroll-snap-align: start;
 	}
+	.svh {
+	min-height: 100svh;
+}
 }
 </style>
