@@ -56,22 +56,43 @@
 </template>
 
 <style scoped>
-.maxw {
-  max-width: 500px;
+.button-link{
+	display:block;
+margin-top: 1em;
+padding:1em;
+width: 10em;
+
 }
-.button-link {
-  display: block;
-  margin-top: 1em;
-  padding: 1em;
-  width: 10em;
-}
-img {
-aspect-ratio: 3/2;
-  height: 100%;
-  width: 100%;
-}
-</style>
+img{
+	height: 100%;
+	width: 100%;
+}</style>
 
 <script>
-export default {};
+import ProjectCard from './templates/ProjectCard.vue';
+export default {
+	components:{ProjectCard},
+	data() {
+		return {
+			isVisible: null,
+			actualLink:null,
+			links: [{link:'http://pawel-kicinski.pl',title:'My Portfolio', img:'portfolio.png'}, {link:'http://projects.pawel-kicinski.pl',title:'Cięcie wodą 3D', img:'zsz1.png'}],
+
+			
+		};
+	},
+
+	methods: {
+		isAvailable(data){
+			this.isVisible = data;
+			this.$emit('isVisible', this.isVisible);
+			this.$emit('href',this.actualLink)
+		},
+		actLink(data){
+			console.log(data);
+			this.actualLink=data;
+		},
+
+	},
+};
 </script>

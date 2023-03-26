@@ -22,7 +22,5 @@
 	.snapAlign {
 		scroll-snap-align: start;
 	}
-	
-
 }
 </style>

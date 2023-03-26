@@ -6,6 +6,7 @@ import SectionTemplate from './components/templates/SectionTemplate.vue';
 import MySkills from './components/MySkills.vue';
 import MyPortfolio from './components/MyPortfolio.vue';
 import ContactForm from './components/ContactForm.vue';
+
 export default {
 	components: {
 		HeroSection,
@@ -16,29 +17,65 @@ export default {
 		MyPortfolio,
 		ContactForm,
 	},
+	data() {
+		return {
+			isModalVisible: false,
+			hrefLink: null,
+		};
+	},
+	methods: {
+		confirmModal() {
+			this.isModalVisible = false;
+			window.onbeforeunload = null;
+
+			window.location.href = this.hrefLink;
+			this.hrefLink = null;
+		},
+		closeModal() {
+			this.isModalVisible = false;
+		},
+
+		buttonClicked(data) {
+			this.isModalVisible = true;
+		},
+		linkSave(data) {
+			this.hrefLink = data;
+		},
+	},
+	mounted() {
+		if (this.hrefLink) {
+			window.onbeforeunload = () => {
+				this.isModalVisible = true;
+			};
+		}
+	},
 };
 </script>
 
 <template>
+	<MyModal
+		class="z-10"
+		v-show="isModalVisible"
+		@close="closeModal"
+		@proceed="confirmModal"
+	></MyModal>
 
-
-	<section-template class="bg-dark-1100"><hero-section ></hero-section
-		></section-template>
-		<section-template class="bg-dark-1200">
-			<about-me></about-me
-		></section-template>
-		<section-template class=" bg-dark-1100">
-			<my-services></my-services
-		></section-template>
-		<section-template class=" bg-dark-1200">
-			<my-skills></my-skills
-		></section-template>
-		<section-template class=" bg-dark-1100">
-			<my-portfolio></my-portfolio
-		></section-template>
-		<section-template class=" bg-dark-1200"
-			><contact-form></contact-form
-		></section-template>
-
-	
+	<section-template class="bg-dark-1100"
+		><hero-section class="md:self-end"></hero-section
+	></section-template>
+	<section-template class="bg-dark-1200">
+		<about-me></about-me
+	></section-template>
+	<section-template class="bg-dark-1100">
+		<my-services></my-services
+	></section-template>
+	<section-template class="bg-dark-1200">
+		<my-skills></my-skills
+	></section-template>
+	<section-template class="bg-dark-1100">
+		<my-portfolio @isVisible="buttonClicked" @href="linkSave"></my-portfolio
+	></section-template>
+	<section-template class="bg-dark-1200"
+		><contact-form></contact-form
+	></section-template>
 </template>

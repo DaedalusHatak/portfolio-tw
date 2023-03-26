@@ -12,8 +12,8 @@
 			></div
 		>
 		<div class="text-left max-w-md"
-			>
-			<p class="text-stroke text-2xl md:text-3xl lg:text-4xl font-bold !leading-12"
+			><p class="text-orange-1200 text-with-line">Front-end developer </p>
+			<p class="text-2xl md:text-3xl lg:text-4xl font-bold !leading-12"
 				>Based in Poland, I’m Front-end developer</p
 			></div
 		>
@@ -23,9 +23,7 @@
 </template>
 
 <style scoped>
-.text-stroke{
-	-webkit-text-stroke: 1px black;
-}
+
 @media screen and (min-width: 1024px) {
 	.height{
 		gap:35em;

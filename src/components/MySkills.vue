@@ -8,8 +8,10 @@
 
 			<div class="font-bold text-4xl py-7">My Skills & Tools</div>
 			<p class="text-gray-1100"
-				>I work with Visual Studio, and I'm going with Vue.js for my projects as it's good for smaller projects.
-				<br>For better quality and performance adding Tailwind/Vuetify and Vite is what I'm going for. <br> I'm also using Github to improve my websites safely.
+				>I work with Visual Studio, and I'm going with Vue.js for my projects as
+				it's good for smaller projects. <br />For better quality and performance
+				adding Tailwind/Vuetify and Vite is what I'm going for. <br />
+				I'm also using Github to improve my websites safely.
 			</p>
 		</div>
 		<div class="lg:col-span-3">
@@ -62,10 +64,5 @@
 <style scoped>
 li {
 	max-width: 650px;
-}
-div {
-	scroll-snap-stop: always;
-	scroll-snap-align: start;
-	scroll-snap-type: y mandatory;
 }
 </style>
