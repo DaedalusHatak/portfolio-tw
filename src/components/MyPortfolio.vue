@@ -56,6 +56,9 @@
 </template>
 
 <style scoped>
+.maxw{
+  max-width: 500px;
+}
 .button-link{
 	display:block;
 margin-top: 1em;
@@ -66,6 +69,7 @@ width: 10em;
 img{
 	height: 100%;
 	width: 100%;
+  aspect-ratio: 3/2;
 }</style>
 
 <script>

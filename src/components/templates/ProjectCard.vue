@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 img {
-	aspect-ratio: 3/2;
+	aspect-ratio: 3 / 5;
 	height: 100%;
 	width: 100%;
 }</style>

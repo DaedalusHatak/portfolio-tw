@@ -102,7 +102,7 @@
 							required
 						></textarea>
 					</div>
-					<button><ButtonGlow></ButtonGlow></button> </form
+					<button><ButtonGlow message="Send message"></ButtonGlow></button> </form
 			></div>
 		</div>
 	</div>
