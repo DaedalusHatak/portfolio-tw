@@ -15,7 +15,7 @@
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">Cięcie wodą 3D</p>
-          <a class="self-center" href="http://projects.pawel-kicinski.pl/zsz/"
+          <a class="self-center" @click.prevent="actLink" href="http://projects.pawel-kicinski.pl/zsz/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">My portfolio</p>
-          <a class="self-center" href="http://pawel-kicinski.pl"
+          <a class="self-center" @click.prevent="actLink" href="http://pawel-kicinski.pl"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">Multi step form</p>
-          <a class="self-center" href="http://projects.pawel-kicinski.pl/multi-step/"
+          <a class="self-center"  @click.prevent="actLink" href="http://projects.pawel-kicinski.pl/multi-step/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -76,9 +76,10 @@ img{
 import ProjectCard from './templates/ProjectCard.vue';
 export default {
 	components:{ProjectCard},
+
 	data() {
 		return {
-			isVisible: null,
+			isVisible:null,
 			actualLink:null,
 			links: [{link:'http://pawel-kicinski.pl',title:'My Portfolio', img:'portfolio.png'}, {link:'http://projects.pawel-kicinski.pl',title:'Cięcie wodą 3D', img:'zsz1.png'}],
 
@@ -87,14 +88,13 @@ export default {
 	},
 
 	methods: {
-		isAvailable(data){
-			this.isVisible = data;
-			this.$emit('isVisible', this.isVisible);
-			this.$emit('href',this.actualLink)
-		},
+
 		actLink(data){
-			console.log(data);
-			this.actualLink=data;
+	
+			this.actualLink=data.target.parentElement.href;
+      this.isVisible = true;
+      this.$emit('href',this.actualLink)
+      this.$emit('modalActive',this.isVisible)
 		},
 
 	},

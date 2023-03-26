@@ -1,4 +1,5 @@
 <script>
+import MyModal from './components/templates/MyModal.vue';
 import HeroSection from './components/HeroSection.vue';
 import AboutMe from './components/AboutMe.vue';
 import MyServices from './components/MyServices.vue';
@@ -16,6 +17,7 @@ export default {
 		MySkills,
 		MyPortfolio,
 		ContactForm,
+		MyModal,
 	},
 	data() {
 		return {
@@ -25,11 +27,13 @@ export default {
 	},
 	methods: {
 		confirmModal() {
-			this.isModalVisible = false;
+			
+			this.isModalVisible = true;
 			window.onbeforeunload = null;
 
 			window.location.href = this.hrefLink;
 			this.hrefLink = null;
+			this.isModalVisible = false;
 		},
 		closeModal() {
 			this.isModalVisible = false;
@@ -42,12 +46,16 @@ export default {
 			this.hrefLink = data;
 		},
 	},
+
 	mounted() {
+		
 		if (this.hrefLink) {
 			window.onbeforeunload = () => {
 				this.isModalVisible = true;
 			};
 		}
+			
+	
 	},
 };
 </script>
@@ -73,7 +81,7 @@ export default {
 		<my-skills></my-skills
 	></section-template>
 	<section-template class="bg-dark-1100">
-		<my-portfolio @isVisible="buttonClicked" @href="linkSave"></my-portfolio
+		<my-portfolio @modal-active="buttonClicked" @href="linkSave"></my-portfolio
 	></section-template>
 	<section-template class="bg-dark-1200"
 		><contact-form></contact-form
