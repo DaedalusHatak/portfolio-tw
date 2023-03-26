@@ -56,12 +56,12 @@
 						></p
 					>
 					<p class="flex items-center gap-5 py-5"
-						><img src="../assets/Group 4230.svg" alt="" />Freelance available</p
+						><img src="../assets/groupicon.svg" alt="" />Freelance available</p
 					>
 				</div>
 			</div>
 			<div class="pb-16">
-				<form @submit.prevent="sendForm" class="flex flex-col gap-3" action="">
+				<form  ref="form" class="flex flex-col gap-3" action="">
 					<p
 						class="text-3xl text-orange-1100 font-bold pb-12 text-with-line w-max-full"
 						>Contact Form</p
@@ -81,7 +81,7 @@
 							rows="5"
 						></textarea>
 					</div>
-					<button><ButtonGlow></ButtonGlow></button> </form
+					<button type="submit" value="Send"><ButtonGlow message="Send message"></ButtonGlow></button> </form
 			></div>
 		</div>
 	</div>
@@ -89,12 +89,13 @@
 
 <script>
 import CardTemplate from './templates/CardTemplate.vue';
+import emailjs from '@emailjs/browser';
 export default {
 	components: { CardTemplate },
 	methods: {
-		sendForm() {
-			console.log('test');
-		},
+		sendEmail() {
+
+		}
 	},
 };
 </script>

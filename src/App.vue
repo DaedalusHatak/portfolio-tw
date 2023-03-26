@@ -22,7 +22,7 @@ export default {
 <template>
 
 
-	<section-template class=" bg-dark-1100"><hero-section class="md:self-end"></hero-section
+	<section-template class="bg-dark-1100"><hero-section ></hero-section
 		></section-template>
 		<section-template class="bg-dark-1200">
 			<about-me></about-me

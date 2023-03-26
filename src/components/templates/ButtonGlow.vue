@@ -1,12 +1,18 @@
 <template>
 	<div class="grid glow-effect relative bg-orange-1200" type="submit"
-		>Send message
+		>{{ message }}
 		<svg class="glow-container absolute">
 			<rect pathLength="100" class="glow-blur"></rect>
 			<rect pathLength="100" class="glow-line"></rect>
 		</svg>
 	</div>
 </template>
+
+<script>
+export default{
+	props:['message'],
+}
+</script>
 
 <style scoped>
 div {
