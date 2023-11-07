@@ -11,7 +11,10 @@
     >
       <div class="maxw">
         <div class="border-2 border-orange-1100">
-          <img src="../assets/zsz1.png" alt="" />
+          <img
+            src="../assets/zsz1.png"
+            alt=""
+          />
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">Cięcie wodą 3D</p>
@@ -26,7 +29,10 @@
 
       <div class="maxw">
         <div class="border-2 border-orange-1100">
-          <img src="../assets/portfolio.png" alt="" />
+          <img
+            src="../assets/portfolio.png"
+            alt=""
+          />
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">My portfolio</p>
@@ -41,7 +47,10 @@
 
       <div class="maxw">
         <div class="border-2 border-orange-1100">
-          <img src="../assets/multi-step.png" alt="" />
+          <img
+            src="../assets/multi-step.png"
+            alt=""
+          />
         </div>
         <div class="grid justify-items-center">
           <p class="pt-3 pb-3">Multi step form</p>
@@ -56,14 +65,35 @@
 
       <div class="maxw">
         <div class="border-2 border-orange-1100">
-          <img src="../assets/Daedalus.png" alt="" />
+          <img
+            src="../assets/Daedalus.png"
+            alt=""
+          />
         </div>
         <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Netflix clone (build in progress)</p>
+          <p class="pt-3 pb-3">Netflix clone (Nuxt)</p>
           <a
             class="self-center"
             @click.prevent="actLink"
             href="https://nuxt.pawel-kicinski.pl/"
+            ><ButtonGlow message="Go to project"></ButtonGlow
+          ></a>
+        </div>
+      </div>
+
+      <div class="maxw">
+        <div class="border-2 border-orange-1100">
+          <img
+            src="../assets/Daedalus.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-items-center">
+          <p class="pt-3 pb-3">Netflix clone (Next.js)</p>
+          <a
+            class="self-center"
+            @click.prevent="actLink"
+            href="https://next.pawel-kicinski.pl/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -73,53 +103,53 @@
 </template>
 
 <style scoped>
-.maxw {
-  max-width: 500px;
-}
-.button-link {
-  display: block;
-  margin-top: 1em;
-  padding: 1em;
-  width: 10em;
-}
-img {
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 3/2;
-}
+  .maxw {
+    max-width: 500px;
+  }
+  .button-link {
+    display: block;
+    margin-top: 1em;
+    padding: 1em;
+    width: 10em;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
 </style>
 
 <script>
-import ProjectCard from "./templates/ProjectCard.vue";
-export default {
-  components: { ProjectCard },
+  import ProjectCard from "./templates/ProjectCard.vue";
+  export default {
+    components: { ProjectCard },
 
-  data() {
-    return {
-      isVisible: null,
-      actualLink: null,
-      links: [
-        {
-          link: "http://pawel-kicinski.pl",
-          title: "My Portfolio",
-          img: "portfolio.png",
-        },
-        {
-          link: "http://projects.pawel-kicinski.pl",
-          title: "Cięcie wodą 3D",
-          img: "zsz1.png",
-        },
-      ],
-    };
-  },
-
-  methods: {
-    actLink(data) {
-      this.actualLink = data.target.parentElement.href;
-      this.isVisible = true;
-      this.$emit("href", this.actualLink);
-      this.$emit("modalActive", this.isVisible);
+    data() {
+      return {
+        isVisible: null,
+        actualLink: null,
+        links: [
+          {
+            link: "http://pawel-kicinski.pl",
+            title: "My Portfolio",
+            img: "portfolio.png",
+          },
+          {
+            link: "http://projects.pawel-kicinski.pl",
+            title: "Cięcie wodą 3D",
+            img: "zsz1.png",
+          },
+        ],
+      };
     },
-  },
-};
+
+    methods: {
+      actLink(data) {
+        this.actualLink = data.target.parentElement.href;
+        this.isVisible = true;
+        this.$emit("href", this.actualLink);
+        this.$emit("modalActive", this.isVisible);
+      },
+    },
+  };
 </script>
