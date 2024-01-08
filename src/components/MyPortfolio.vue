@@ -21,7 +21,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://projects.pawel-kicinski.pl/zsz/"
+            href="http://projects.pawel-kicinski.com/zsz/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -39,7 +39,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://pawel-kicinski.pl"
+            href="http://pawel-kicinski.com"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -57,7 +57,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://projects.pawel-kicinski.pl/multi-step/"
+            href="http://projects.pawel-kicinski.com/multi-step/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -75,7 +75,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://nuxt.pawel-kicinski.pl/"
+            href="https://nuxt.pawel-kicinski.com/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -93,7 +93,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://next.pawel-kicinski.pl/"
+            href="https://next.pawel-kicinski.com/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -130,12 +130,12 @@
         actualLink: null,
         links: [
           {
-            link: "http://pawel-kicinski.pl",
+            link: "http://pawel-kicinskicom",
             title: "My Portfolio",
             img: "portfolio.png",
           },
           {
-            link: "http://projects.pawel-kicinski.pl",
+            link: "http://projects.pawel-kicinskicom",
             title: "Cięcie wodą 3D",
             img: "zsz1.png",
           },

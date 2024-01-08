@@ -3,12 +3,12 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST["message"];
 
-$to      = 'pawelkic@serwer2339779.home.pl';
+$to      = 'pawelkic.dev@gmail.com';
 $subject = "New message from " . $name;
 
 $headers = array(
     'From' => "$email",
-    'Reply-To' => 'pawelkic@serwer2339779.home.pl',
+    'Reply-To' => 'pawelkic.dev@gmail.com',
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
