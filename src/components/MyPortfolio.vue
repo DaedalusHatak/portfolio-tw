@@ -130,12 +130,12 @@
         actualLink: null,
         links: [
           {
-            link: "http://pawel-kicinskicom",
+            link: "http://pawel-kicinski.com",
             title: "My Portfolio",
             img: "portfolio.png",
           },
           {
-            link: "http://projects.pawel-kicinskicom",
+            link: "http://projects.pawel-kicinski.com",
             title: "Cięcie wodą 3D",
             img: "zsz1.png",
           },

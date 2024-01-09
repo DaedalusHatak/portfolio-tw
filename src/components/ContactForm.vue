@@ -136,7 +136,7 @@ export default {
       data.append("email", this.email);
       data.append("message", this.message);
       axios
-        .post("/send-email.php", data)
+        .post("/send-email", data)
         .then((response) => {
           alert("Message was sent succesfully");
         })
