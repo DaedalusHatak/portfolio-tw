@@ -1,4 +1,6 @@
+<!-- Comment -->
 <template>
+  
   <svg
     class="vector"
     width="214"
