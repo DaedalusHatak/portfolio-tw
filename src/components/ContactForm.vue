@@ -48,7 +48,7 @@
           <p class="flex items-center gap-5 py-5">
             <img src="../assets/mail.svg" alt="" /><a
               href="mailto:pawelkic.dev@gmail.com"
-              >pawelkic55@gmail.com</a
+              >pawelkic.dev@gmail.com</a
             >
           </p>
           <p class="flex items-center gap-5 py-5">
