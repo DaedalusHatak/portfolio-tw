@@ -53,7 +53,7 @@
 
 html {
 	height: 100%;
-	scroll-behavior: smooth;
+
 }
 body {
   height: 100%;
@@ -71,7 +71,7 @@ body {
 /* BUTTON */
 #app{
     overflow-y: scroll;
-  scroll-behavior: smooth;
+
 
   }
 
@@ -79,8 +79,8 @@ body {
  @media screen and (min-width: 1024px) and (min-height:805px){
   #app{
     overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+
+
   }
 } 
 /* 

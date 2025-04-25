@@ -21,7 +21,24 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://projects.pawel-kicinski.com/zsz/"
+            href="https://projects.pawel-kicinski.pl/zsz/"
+            ><ButtonGlow message="Go to project"></ButtonGlow
+          ></a>
+        </div>
+      </div>
+      <div class="maxw">
+        <div class="border-2 border-orange-1100">
+          <img
+            src="../assets/plazmet.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-items-center">
+          <p class="pt-3 pb-3">Plazmet</p>
+          <a
+            class="self-center"
+            @click.prevent="actLink"
+            href="https://plazmet.com.pl"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -39,7 +56,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://pawel-kicinski.com"
+            href="https://pawel-kicinski.pl"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -57,7 +74,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="http://projects.pawel-kicinski.com/multi-step/"
+            href="https://projects.pawel-kicinski.pl/multi-step/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -75,7 +92,7 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://nuxt.pawel-kicinski.com/"
+            href="https://nuxt.pawel-kicinski.pl/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -93,11 +110,33 @@
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://next.pawel-kicinski.com/"
+            href="https://next.pawel-kicinski.pl/"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
+        
       </div>
+
+      <div class="maxw">
+        <div class="border-2 border-orange-1100">
+          <img
+            src="../assets/flight.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-items-center">
+          <p class="pt-3 pb-3">Flight Manager (Next.js)</p>
+          <a
+            class="self-center"
+            @click.prevent="actLink"
+            href="https://flight.pawel-kicinski.pl/"
+            ><ButtonGlow message="Go to project"></ButtonGlow
+          ></a>
+        </div>
+        
+      </div>
+
+
     </div>
   </div>
 </template>
@@ -130,12 +169,12 @@
         actualLink: null,
         links: [
           {
-            link: "http://pawel-kicinski.com",
+            link: "https://pawel-kicinski.pl",
             title: "My Portfolio",
             img: "portfolio.png",
           },
           {
-            link: "http://projects.pawel-kicinski.com",
+            link: "https://projects.pawel-kicinski.pl/zsz/",
             title: "Cięcie wodą 3D",
             img: "zsz1.png",
           },

@@ -11,9 +11,10 @@
 
 			<p class="leading-7 max-w-xl text-gray-1200">
 				I was born in Poland with a passion for front-end. I like editing and
-				creating stuff, and mostly I love solving problems. I always try to give
-				my best and build websites that are 'pixel perfect'. I also am
-				interested in asian culture and travelling.
+				creating things, and mostly I love solving problems. I always try to give
+				my best and build websites that are as close as possible to 'pixel perfect'. I also am
+				interested in asian culture and travelling.<br/><br/>
+				For now I'm getting more into React and Next.js so I can easily achieve websites satisfying client no matter technology
 			</p>
 			<div class="pt-12 mt-12 flex w-12 items-center">
 				<p class="text-6xl lg:text-8xl text-orange-1300 font-semibold">01</p>
