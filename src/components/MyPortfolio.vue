@@ -9,19 +9,20 @@
     <div
       class="py-12 grid lg:grid-cols-2 justify-items-center text-center gap-16 md:gap-44"
     >
-      <div class="maxw">
+     
+    <div class="maxw">
         <div class="border-2 border-orange-1100">
           <img
-            src="../assets/zsz1.png"
+            src="../assets/Electron-Notification-App.png"
             alt=""
           />
         </div>
         <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Cięcie wodą 3D</p>
+          <p class="pt-3 pb-3">Powiadiomienia Electron</p>
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://projects.pawel-kicinski.pl/zsz/"
+            href="https://github.com/DaedalusHatak/Electron-Notification-App"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
@@ -43,7 +44,23 @@
           ></a>
         </div>
       </div>
-
+      <div class="maxw">
+        <div class="border-2 border-orange-1100">
+          <img
+            src="../assets/zsz1.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-items-center">
+          <p class="pt-3 pb-3">Cięcie wodą 3D</p>
+          <a
+            class="self-center"
+            @click.prevent="actLink"
+            href="https://projects.pawel-kicinski.pl/zsz/"
+            ><ButtonGlow message="Go to project"></ButtonGlow
+          ></a>
+        </div>
+      </div>
       <div class="maxw">
         <div class="border-2 border-orange-1100">
           <img
