@@ -132,22 +132,28 @@ export default {
       this.email = null;
       this.message = null;
     },
-    sendForm() {
-      const data = new FormData();
-      data.append("name", this.name);
-      data.append("email", this.email);
-      data.append("message", this.message);
-      axios
-        .post("/send-email.php", data)
-        .then((response) => {
-          alert("Message was sent succesfully");
-        })
-        .catch((error) => {
-          alert("Something went wrong, try again later");
-        });
-      this.clearData();
-    },
-  },
+sendForm() {
+  // Prepare JSON payload instead of FormData
+  const payload = {
+    name: this.name,
+    email: this.email,
+    message: this.message
+  };
+
+  // Send POST request to contact-server
+  axios
+    .post("https://contact.pawel-kicinski.pl/contact", payload) // <-- port 3001 where contact-server runs
+    .then((response) => {
+      alert(response.data.message || "Message logged successfully!");
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Something went wrong, try again later");
+    });
+
+  // Clear form fields
+  this.clearData();
+}  },
 };
 </script>
 
