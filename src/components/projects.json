@@ -1,0 +1,29 @@
+{
+"projects":[
+{"name": "Powiadiomienia Electron",
+"link":"https://github.com/DaedalusHatak/Electron-Notification-App",
+"src":"/Electron-Notification-App.png"},
+{"name": "Plazmet",
+"link":"https://plazmet.com.pl",
+"src":"/plazmet.png"},
+{"name": "Cięcie Wodą 3D",
+"link":"https://projects.pawel-kicinski.pl/zsz/",
+"src":"/zsz1.png"},
+{"name": "My Portfolio",
+"link":"https://pawel-kicinski.pl",
+"src":"/portfolio.png"},
+{"name": "Multi Step Form",
+"link":"https://projects.pawel-kicinski.pl/multi-step/",
+"src":"/multi-step.png"},
+{"name": "Netflix clone (Nuxt)",
+"link":"https://nuxt.pawel-kicinski.pl/",
+"src":"/Daedalus.png"},
+{"name": "Netflix clone (Next)",
+"link":"https://next.pawel-kicinski.pl/",
+"src":"/Daedalus.png"},
+{"name": "Flight Manager (Next.js)",
+"link":"https://flight.pawel-kicinski.pl/",
+"src":"/flight.png"}
+]
+}
+

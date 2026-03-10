@@ -10,151 +10,25 @@
       class="py-12 grid lg:grid-cols-2 justify-items-center text-center gap-16 md:gap-44"
     >
      
-    <div class="maxw">
+    <div v-for="project in projects" class="maxw">
         <div class="border-2 border-orange-1100">
           <img
-            src="../assets/Electron-Notification-App.png"
-            alt=""
+            :src="project.src"
+            :alt="project.name"
           />
         </div>
         <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Powiadiomienia Electron</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://github.com/DaedalusHatak/Electron-Notification-App"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/plazmet.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Plazmet</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://plazmet.com.pl"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/zsz1.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Cięcie wodą 3D</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://projects.pawel-kicinski.pl/zsz/"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/portfolio.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">My portfolio</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://pawel-kicinski.pl"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/multi-step.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Multi step form</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://projects.pawel-kicinski.pl/multi-step/"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/Daedalus.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Netflix clone (Nuxt)</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://nuxt.pawel-kicinski.pl/"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
-      </div>
-
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/Daedalus.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Netflix clone (Next.js)</p>
-          <a
-            class="self-center"
-            @click.prevent="actLink"
-            href="https://next.pawel-kicinski.pl/"
-            ><ButtonGlow message="Go to project"></ButtonGlow
-          ></a>
-        </div>
+          <p class="pt-3 pb-3">{{project.name}}</p>
         
-      </div>
-
-      <div class="maxw">
-        <div class="border-2 border-orange-1100">
-          <img
-            src="../assets/flight.png"
-            alt=""
-          />
-        </div>
-        <div class="grid justify-items-center">
-          <p class="pt-3 pb-3">Flight Manager (Next.js)</p>
           <a
             class="self-center"
             @click.prevent="actLink"
-            href="https://flight.pawel-kicinski.pl/"
+            :href="project.link"
             ><ButtonGlow message="Go to project"></ButtonGlow
           ></a>
         </div>
-        
       </div>
-
-
-    </div>
+  </div>
   </div>
 </template>
 
@@ -176,12 +50,13 @@
 </style>
 
 <script>
-  import ProjectCard from "./templates/ProjectCard.vue";
+ 
   export default {
-    components: { ProjectCard },
+   
 
     data() {
       return {
+        projects: [],
         isVisible: null,
         actualLink: null,
         links: [
@@ -198,7 +73,10 @@
         ],
       };
     },
-
+    async mounted(){
+const res = await fetch('/data/projects.json')
+this.projects = await res.json()
+},
     methods: {
       actLink(data) {
         this.actualLink = data.target.parentElement.href;
